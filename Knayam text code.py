@@ -7,9 +7,9 @@ from datetime import datetime
 engine = pyttsx3.init()
 
 # WinRM credentials
-username = 'administrator'
-password = 'Imawsm12!'
-server_ip = '192.168.244.129'  # Replace with your VM's IP
+username = 'replace with VM Username'
+password = 'replace with VM password'
+server_ip = 'x.x.x.x'  # Replace with your VM's IP
 
 # Create WinRM session
 session = winrm.Session(f'http://{server_ip}:5985/wsman', auth=(username, password))
